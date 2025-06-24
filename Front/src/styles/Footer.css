@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.footer {
+  @apply bg-[#aa7c5b] text-[#f8e9d7] p-4 flex flex-col items-center;
+  width: 100%;
+}
+
+.footer__address-line {
+  @apply text-sm;
+}
+
+.familia {
+  font-family: Georgia, times, serif;
+}

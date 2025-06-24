@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* LandingPageComponent.module.css */
+.landingPage {
+  @apply flex-grow relative p-8 bg-[#e0c3a4] flex flex-col items-center;
+}
+
+.landingPage__welcome {
+  @apply text-xl text-[#885437] mb-4;
+}
+
+.landingPage__searchContainer {
+  @apply bg-white p-6 rounded shadow-md w-full max-w-md;
+}
+
+.landingPage__input {
+  @apply w-full p-2 mb-4 border border-gray-300 rounded;
+}
+
+.landingPage__button {
+  @apply bg-[#885437] text-white p-2 rounded w-full hover:bg-[#aa7c5b];
+}
+
+.familia {
+  font-family: Georgia, times, serif;
+}

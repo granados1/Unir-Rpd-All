@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer components {
+    .search--order--container {
+        @apply flex justify-between items-center mb-4;
+    }
+
+    .search--order--container > * {
+        @apply w-1/2;
+    }
+
+    .product--list--container {
+        @apply bg-[#e0c3a4] text-white font-[Georgia] px-6 pb-4 rounded-lg shadow-lg;
+    }
+
+    .product-list {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3;
+    }
+
+    .product-card {
+        @apply border border-gray-300 rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-xl duration-300 ease-in-out;
+    }
+
+    .product-image {
+        @apply w-full h-48 object-contain rounded-lg mb-4 bg-black/5 flex items-center justify-center;
+    }
+
+    .product-name {
+        @apply text-lg text-black font-bold mb-2;
+    }
+
+    .product-price {
+        @apply text-gray-700 mb-2;
+    }
+
+    .add-to-cart-button {
+        @apply bg-[#885437] text-white py-2 px-2 rounded-lg hover:bg-[#e0c3a4] hover:text-black transition-colors duration-200;
+    }
+
+    p {
+        @apply text-black text-justify;
+    }
+
+    .view-details {
+        @apply bg-[#e0c3a4] hover:underline text-black py-2 px-4 rounded-lg hover:bg-[#885437] hover:text-white transition-colors duration-200;
+    }
+
+    .buttons-container {
+        @apply flex justify-between items-center mt-4 px-4;
+    }
+
+    .table--orders {
+        border-collapse: collapse !important;
+        width: 100% !important;
+        background-color:white !important;
+        color: rgb(24, 23, 23) !important; /* Color de texto rojo */
+    }
+
+    .table--orders th,
+    .table--orders td {
+        border: 1px solid black !important; /* Borde en negrita */
+        padding: 10px !important;
+        text-align: center !important;
+    }
+
+    .mtable--orders th {
+        font-weight: bold !important; /* Negrita para la primera fila */
+    }
+
+    .boton--actions-2 {
+        display: block; /* Salto de línea */
+        margin: 5px auto;
+        padding: 6px 10px;
+        background-color: #885437;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        .boton--actions {
+        @apply bg-[#885437] text-white py-0.5 px-2 rounded-lg hover:bg-[#e0c3a4] hover:text-black transition-colors duration-200;
+    }
+
+    .support--list--container {
+        @apply bg-[white] text-white font-[Georgia] px-6 pb-58 rounded-lg shadow-lg;
+    }
+
+}

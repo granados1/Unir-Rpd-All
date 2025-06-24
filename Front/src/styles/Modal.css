@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer components {
+    .modal-content-relative {
+        @apply relative;
+    }
+
+    .modal-product-detail {
+        @apply 
+            fixed 
+            top-0 
+            left-0 
+            w-screen 
+            h-screen
+            flex
+            items-center
+            justify-center
+            z-[1000]
+            bg-black/50;
+    }
+
+    .modal-product-detail > * {
+        @apply
+            bg-[#e0c3a4]
+            p-4
+            rounded-lg
+            max-w-[90vw]
+            max-h-[90vh]
+            overflow-y-auto
+            shadow-lg;
+    }
+
+    .close-modal-btn {
+        @apply
+            absolute
+            top-0
+            right-4
+            bg-transparent
+            border-none
+            text-4xl
+            text-red-500
+            cursor-pointer
+            z-[1010]
+            transition-colors;
+    }
+
+    .close-modal-btn:hover {
+        @apply text-red-100;
+    }
+
+    .modal-flex-container {
+        @apply flex flex-col gap-4 w-full h-full md:flex-row;
+    }
+
+    .modal-section {
+        @apply w-full flex items-center justify-center md:w-1/2;
+    }
+
+    .modal-section-detail {
+        @apply pr-4 md:border-r-2 md:border-white;
+    }
+
+    .modal-section-new {
+        @apply pl-2;
+    }
+
+    .nuevo-componente-text {
+        @apply text-2xl font-bold text-[#885437] mb-4;
+    }
+}

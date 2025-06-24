@@ -1,0 +1,58 @@
+.familia{
+    font-family: Georgia, times, serif;
+}
+
+.cart--item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.cart--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.cart--title {
+    font-weight: 500;
+}
+
+.cart--price {
+    font-size: 0.875rem;
+    color: #1b1f25;
+}
+
+.cart--controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity--controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.botonc {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.boton--adjust {
+    background-color: #e0c3a4;
+}
+
+.boton--adjust:hover {
+    background-color: #aa7c5b;
+}
+
+.btn--remove {
+    color: #ef4444;
+    font-family: Georgia, times, serif;
+
+    font-size: 0.75rem;
+    cursor: pointer;
+}

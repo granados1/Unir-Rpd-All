@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+    body {
+        @apply bg-[#e0c3a4] text-white font-[Georgia];
+    }
+}

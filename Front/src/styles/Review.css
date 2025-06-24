@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer components {
+    .product-detail {
+        @apply border border-gray-300 rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-xl duration-300 ease-in-out font-[Georgia];
+    }
+
+    .product-detail-top {
+        @apply flex flex-col md:flex-row gap-4 w-full;
+    }
+
+    .product--review--image--container {
+        @apply flex flex-auto justify-center items-center;
+    }
+
+    .product--review--image{
+        @apply max-w-full max-h-[300px] rounded-xl object-contain;
+    }
+
+    .product-detail-name {
+        @apply text-lg text-black font-bold mb-2;
+    }
+
+    .product-detail-description {
+        @apply flex flex-col justify-center w-full md:w-1/2;
+    }
+
+    .product-detail-bottom {
+        @apply flex flex-col gap-2 items-start;
+    }
+
+    .buttons-container-detail {
+        @apply flex justify-center items-center mt-4 px-0 gap-4 w-full;
+    }
+
+    .comprar-button-detail {
+        @apply bg-[#e0c3a4] hover:underline text-black py-2 px-4 rounded-lg hover:bg-[#885437] hover:text-white transition-colors duration-200;
+    }
+
+    .add-to-cart-button-detail {
+        @apply bg-[#885437] text-white py-2 px-2 rounded-lg hover:bg-[#e0c3a4] hover:text-black transition-colors duration-200;
+    }
+
+    .add-to-cart-button-detail,
+    .comprar-button-detail {
+        @apply w-1/2 text-center;
+    }
+
+    @screen sm {
+        .buttons-container-detail {
+            @apply flex-row;
+        }
+        .add-to-cart-button-detail,
+        .comprar-button-detail {
+            @apply w-1/2;
+        }
+    }
+    @screen xs {
+        .buttons-container-detail {
+            @apply flex-col;
+        }
+        .add-to-cart-button-detail,
+        .comprar-button-detail {
+            @apply w-full;
+        }
+    }
+
+    .product--review--text {
+        @apply flex flex-1 basis-1/2 flex-col justify-center gap-0;
+    }
+}

@@ -1,0 +1,52 @@
+.coupon--container {
+    margin-top: 1rem;
+}
+
+.familia{
+    font-family: Georgia, times, serif;
+}
+
+
+.coupon--label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.coupon--form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.coupon--input {
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    flex: 1;
+}
+
+.botondes{
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+
+.boton--cupon {
+    background-color: #aa7c5b;
+    color: white;
+}
+
+.boton--cupon:hover {
+    background-color: #ba9c82;
+    color: black;
+}
+
+
+.coupon--success {
+    color: #16a34a;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-family: Georgia, times, serif;
+
+}

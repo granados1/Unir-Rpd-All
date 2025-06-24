@@ -1,0 +1,23 @@
+.familiare{
+    font-family: Georgia, times, serif;
+
+}
+
+
+
+.cart--summary {
+    margin-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.cart--discount {
+    color: #ef4444;
+}
+
+.cart--total {
+    font-weight: bold;
+    font-size: 1.125rem;
+
+}

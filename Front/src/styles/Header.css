@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer components {
+    .header {
+        @apply text-white p-2.5 text-center;
+        background-color: var(--color-customBrown);
+    }
+
+    .header-text {
+        @apply text-3xl font-bold;
+    }
+
+    .footer-text {
+        @apply text-lg;
+    }
+}
+
+.header {
+  @apply bg-[#f8e9d7] text-[#885437] p-4 flex justify-between items-center;
+}
+
+.header__title {
+  @apply text-4xl text-[#885437] flex-grow text-center;
+}
+
+.familia {
+  font-family: Georgia, times, serif;
+}

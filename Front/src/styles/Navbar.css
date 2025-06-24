@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.navBar {
+  @apply bg-[#ba9c82] w-1/4 flex flex-col p-4 space-y-4 overflow-y-auto;
+}
+
+.navBar__link {
+  @apply text-[#1b1f25] text-lg hover:bg-[#e0c3a4] p-2 rounded block;
+}
+
+.familia {
+  font-family: Georgia, times, serif;
+}
