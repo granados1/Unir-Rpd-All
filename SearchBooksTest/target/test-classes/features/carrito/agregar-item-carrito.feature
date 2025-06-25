@@ -6,3 +6,4 @@ Feature: Agregar un libro al carrito de compras
     And el usuario hace clic en el botón con id "add-to-cart-1"
     When el usuario hace clic en el icono del carrito con texto "Ver carrito"
     Then el sistema muestra "1" en el texto con id "item-quantity-1"
+    And el usuario hace clic en el botón para quitar el producto del carrito

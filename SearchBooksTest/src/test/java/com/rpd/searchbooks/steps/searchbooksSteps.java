@@ -72,13 +72,13 @@ public class searchbooksSteps {
         WebElement elemento = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(idElemento)));
         String texto = elemento.getText().trim();
         assertEquals(valorEsperado, texto);
-        driver.quit();
     }
 
     @And("el usuario hace clic en el botón para quitar el producto del carrito")
     public void el_usuario_hace_clic_en_el_boton_para_quitar_el_producto_del_carrito() {
-        WebElement botonQuitar = driver.findElement(By.className("btn--remove"));
+        WebElement botonQuitar = driver.findElement(By.id("x-btn-1"));
         botonQuitar.click();
+        driver.quit();
     }
 
 }
