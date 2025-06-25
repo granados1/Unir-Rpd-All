@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+      </profile>
+      <profile name="Annotation profile for ms_users_crud" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="GateWay-rdp" />
+        <module name="ms_users_crud" />
+        <module name="ms-books-catalogue" />
+        <module name="books-payments" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="GateWay-rdp" options="-parameters" />
+      <module name="books-payments" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="ms-books-catalogue" options="-parameters" />
+      <module name="ms_users_crud" options="-parameters" />
+    </option>
+  </component>
+</project>
