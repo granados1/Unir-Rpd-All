@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-server" />
       </profile>
       <profile name="Annotation profile for ms_users_crud" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,12 +15,15 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="GateWay-rdp" />
-        <module name="ms_users_crud" />
-        <module name="ms-books-catalogue" />
-        <module name="books-payments" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="books-payments" target="21" />
+      <module name="eureka-server" target="21" />
+      <module name="GateWay-rdp" target="21" />
+      <module name="ms-books-catalogue" target="21" />
+      <module name="ms_users_crud" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
